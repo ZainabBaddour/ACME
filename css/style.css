@@ -1,0 +1,432 @@
+@font-face {
+    font-family: 'nexa bold';
+    src: url('../fonts/Nexa\ Bold.otf');
+ }
+ @font-face {
+    font-family: 'nexa light';
+    src: url('../fonts/Nexa\ Light.otf');
+ }
+ @font-face {
+    font-family: 'helva';
+    src: url('../fonts/Helvetica.ttf');
+ }
+
+ .nexa-bold{
+     font-family: 'nexa bold';
+ }
+ .nexa-light{
+     font-family: 'nexa light';
+ }
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'helva';
+}
+
+body {
+  overflow-x: hidden;
+}
+span,
+p {
+  color: #1a191a;
+}
+
+:root {
+  --black: #1a191a;
+  --purple: #7c4dff;
+  --yellow: #fecf08;
+  --blue: #00438c;
+  --grey: #BDBDBD99;
+}
+/* colors */
+.white-text {
+  color: white;
+}
+.grey-text {
+    color: var(--grey);
+  }
+.yellow-text {
+  color: var(--yellow);
+}
+.purple-bg {
+  background: var(--purple);
+}
+.yellow-bg {
+  background: var(--yellow);
+}
+.light-bg {
+  color: #fcfcfc;
+}
+.border-purple {
+  border: 1px solid var(--purple);
+}
+.border-yellow {
+  border: 1px solid var(--yellow);
+}
+
+.c-container {
+  max-width: 1500px;
+  width: 90%;
+  margin: auto;
+}
+/* navbar */
+.navbar .logo {
+  width: 200px;
+  text-align: right;
+}
+
+/* head start */
+.head {
+  margin-top: 100px;
+  border-top: 3px solid var(--black);
+  position: relative;
+}
+.head .logo {
+  margin-bottom: 200px;
+}
+.head .title div span span {
+  z-index: 99;
+  position: relative;
+}
+.head .title div:nth-child(1) .circle {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: var(--purple);
+  border-radius: 50%;
+  top: 10px;
+  left: 5px;
+}
+
+.head .title div:nth-child(2) .circle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: var(--purple);
+  border-radius: 50%;
+  bottom: 15px;
+  right: -30px;
+}
+
+.head .bottom-img {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  transform: translateY(75%);
+}
+
+/* about section start */
+.about {
+  padding: 35px;
+  max-width: 1800px;
+  margin: auto;
+}
+.about img {
+  margin-top: 80px;
+}
+
+/* benefit section start */
+.benefit {
+  margin-block: 150px;
+}
+.benefit .imgs {
+  height: 700px;
+}
+.benefit .imgs img:nth-child(1) {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+.benefit .imgs img:nth-child(2) {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+/* recipe section start */
+.recipe {
+  margin: auto;
+  margin-top: 100px;
+  padding: 35px;
+  max-width: 1800px;
+}
+.recipe h3 {
+  text-transform: uppercase;
+}
+.recipe p {
+  max-width: 1000px;
+  margin: auto;
+}
+.recipe img {
+  margin-top: 100px;
+}
+
+/* service section start */
+.services {
+  position: relative;
+  padding-block: 100px;
+}
+
+.services .img-top {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.services .img-bottom {
+  position: absolute;
+  bottom: -25%;
+  right: -25%;
+}
+/* work section start */
+.work {
+  padding-block: 100px;
+  background: var(--blue);
+  position: relative;
+}
+.work .img-txt {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.work h3 {
+  padding-block: 50px;
+}
+.work .work-cover .img {
+  height: 350px;
+}
+.work .work-cover .img img {
+  position: relative;
+  z-index: 9;
+}
+.work .work-cover .img .border-img {
+  position: absolute;
+  content: "";
+  top: -10px;
+  right: -10px;
+  width: 100%;
+  height: 100%;
+  border: 3px solid var(--black);
+}
+
+/* footer section start */
+footer {
+  background: #1a191a;
+  padding-block: 60px;
+}
+/* radius */
+.radius-40 {
+  border-radius: 40px;
+}
+/* image */
+.object-contain {
+  object-fit: contain;
+}
+.object-cover {
+  object-fit: cover;
+}
+
+/* fonts */
+
+.font-15 {
+  font-size: 15px;
+  line-height: 32px;
+}
+.font-17 {
+    font-size: 17px;
+    line-height: 25px;
+  }
+.font-18 {
+  font-size: 18px;
+  line-height: 25px;
+}
+.font-20 {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.font-22 {
+  font-size: 22px;
+  line-height: 27px;
+}
+.font-24 {
+  font-size: 24px;
+  line-height: 32px;
+}
+.font-25 {
+  font-size: 25px;
+  line-height: 51px;
+}
+.font-28 {
+  font-size: 28px;
+  line-height: 47px;
+}
+.font-31 {
+  font-size: 31px;
+  line-height: 44px;
+}
+.font-35 {
+  font-size: 35px;
+  line-height: 51px;
+}
+.font-42 {
+  font-size: 42px;
+  line-height: 48px;
+}
+
+.font-58 {
+  font-size: 58px;
+  line-height: 68px;
+}
+.font-72 {
+  font-size: 72px;
+  line-height: 82px;
+}
+.font-100 {
+  font-size: 100px;
+  line-height: 120px;
+}
+.font-60 {
+  font-size: 60px;
+  line-height: 120px;
+}
+
+
+.weight-300 {
+  font-weight: 300;
+}
+.weight-500 {
+  font-weight: 500;
+}
+
+.weight-500 {
+  font-weight: 500;
+}
+
+.weight-700 {
+  font-weight: 700;
+}
+
+.italic {
+  font-style: italic;
+}
+
+/* global style */
+.cursor-pointer{
+    cursor: pointer;
+}
+.double-circle {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.double-circle div {
+  position: absolute;
+  top: 50%;
+  right: -50%;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+/* media query */
+@media (max-width: 960px) {
+  .c-container {
+    width: 100%;
+    padding: 0px 30px;
+  }
+  .hide-mobile{
+      display: none !important;
+  }
+  .head .logo {
+      margin-bottom: 50px
+  }
+  .font-15 {
+    font-size: 11px;
+    line-height: 22px;
+  }
+  .font-17 {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  .font-18 {
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .font-20 {
+    font-size: 15px;
+    line-height: 30px;
+  }
+  
+  .font-22 {
+    font-size: 17px;
+    line-height: 18px;
+  }
+  .font-24 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .font-25 {
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .font-28 {
+    font-size: 22px;
+    line-height: 38px;
+  }
+  .font-31 {
+    font-size: 24px;
+    line-height: 31px;
+  }
+  .font-35 {
+    font-size: 24px;
+    line-height: 37px;
+  }
+  .font-42 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  
+  .font-58 {
+    font-size: 42px;
+    line-height: 48px;
+  }
+  .font-72 {
+    font-size: 50px;
+    line-height: 62px;
+  }
+  .font-100 {
+    font-size: 70px;
+    line-height: 90px;
+  }
+  .font-60 {
+    font-size: 40px;
+    line-height: 80px;
+  }   
+}
+
+
+.dark{
+  position: absolute;
+    background-color: #00000082!important; 
+
+    width: 35%;
+    height: 80;
+    right: 0;
+    height: 82%;
+    margin-right: 35px;
+    margin-top: 78px;
+}
+@media (min-width: 961px) {
+    .hide-desktop{
+        display: none !important;
+    }
+    .navbar-expand-lg .navbar-collapse{
+        display: none !important;
+    }
+}
